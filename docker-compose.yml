@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  app:
+    build:
+      context: .
+      # We are using docker compose in development mode; no need to build the entire Dockerfile
+      target: development
+    command: node index.js
+    # ports:
+    #   - 3000:3000
+    volumes:
+      # Map our local directory so that changes can be reflected here or within a running container
+      - .:/srv/app
+      # Declare a named volume `app_node_modules` here and at the top level
+      - app_node_modules:/srv/app/node_modules
+
+volumes:
+  # Declare a named volume `app_node_modules` here and at the top level
+  app_node_modules:
