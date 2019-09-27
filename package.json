@@ -1,0 +1,14 @@
+{
+  "name": "explore-docker-nodejs",
+  "version": "0.0.0",
+  "author": "Rob Brennan <rob@therobbrennan.com> (therobbrennan.com)",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRobBrennan/explore-docker-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheRobBrennan/explore-docker-nodejs/issues"
+  },
+  "homepage": "https://github.com/TheRobBrennan/explore-docker-nodejs#readme"
+}
