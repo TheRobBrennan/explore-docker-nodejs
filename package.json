@@ -7,6 +7,7 @@
     "start": "npm run docker:down && npm run docker:up",
     "docker:up": "docker-compose up",
     "docker:up:detached": "docker-compose up -d",
+    "docker:up:prod": "docker build . -t app:latest && docker run --rm --detach --publish 3000:3000 app:latest",
     "docker:down": "docker-compose down",
     "docker:logs": "docker-compose logs -f"
   },
